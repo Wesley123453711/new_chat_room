@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My first project</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body style="background-image: url('img/PAGEPACKGROUND.png');background-repeat:no-repeat;background-size:cover;">
+<script>
+ $(function(){
+ 	$("#anotherContent").load("link.html");
+ });
+</script>
+<div id="anotherContent"></div>
+<section style="float:left;margin: 15px;padding-top:125px;padding-left:750px">
+	<div style="border:4px ridge;padding:15px;">
+		<form action=loginServlet method="post">
+			帳號: <input type="text" name="account" /><br>
+			密碼: <input type="password" name="password" /><br>
+			驗證碼: <input type="text" name="vcode" /><br>
+			<input type="submit" value="login" />
+		</form>
+		<a href="register.jsp">註冊</a>
+	</div>
+	
+</section>
+
+</body>
+</html>
